@@ -1,0 +1,265 @@
+:root {
+    --text: #1A2028;
+    --purple: #6477B6;
+    --gray1: #F2F5FF;
+    --gray2: #96989C;
+ }
+
+body, input, button{
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2%;
+    font-size: 1rem;
+}
+
+.container{
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+h1{
+    font-size: 45px;
+    line-height: 54.22px;
+    margin-bottom: 20px;
+}
+
+h2{
+    font-size: 16px;
+    color: var(--gray2);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+p{
+    line-height: 25.28px;
+    margin-bottom: 60px;
+}
+
+header{
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.03);
+}
+
+header .container{
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+header ul{
+    display: flex;
+}
+
+header li a{
+    margin-left: 50px;
+    color: var(--text);
+}
+
+/* Home */
+.home .home-container{
+    height: calc(100vh - 183px);
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home .content{
+    max-width: 490px;
+}
+
+.home .planilha-img img{
+    max-height: 430px;
+}
+
+.home .buttons a:first-child{
+    padding: 12px 25px;
+    color: white;
+    background-color: var(--purple);
+    box-shadow: 0px 4px 20px rgba(100, 119, 182, 0.3);
+    border-radius: 3px;
+    margin-right: 20px;
+}
+
+.home .buttons a:last-child{
+    padding: 11px 32px;
+    color: var(--text);
+    border-radius: 3px;
+    border: 1px solid var(--text);
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+/* Serviços */
+.servicos{
+    height: calc(100vh - 71px);
+    display: flex;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.servicos h1{
+    font-size: 35px;
+    margin: 10px 0 40px 0;
+    max-width: 550px;
+    line-height: 45px;
+}
+
+.servicos div > p{
+    max-width: 700px;
+}
+
+.servicos ul{
+    display: flex;
+    margin-bottom: 70px;
+}
+
+.servicos ul li{
+    background: var(--gray1);
+    width: 170px;
+    height: 170px;
+    margin-right: 25px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-radius: 3px;
+    box-shadow: 2px 2px 7px rgba(100, 119, 182, 0.3);
+}
+
+.servicos ul li p{
+    margin: 0;
+    max-width: 70px;
+}
+
+.servicos div > a{
+    padding: 12px 25px;
+    color: white;
+    background-color: var(--purple);
+    box-shadow: 0px 4px 20px rgba(100, 119, 182, 0.3);
+    border-radius: 3px;
+}
+
+/* Sobre */
+.sobre{
+    height: calc(100vh - 71px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre .team{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 40%;
+}
+
+.sobre .team img{
+    margin: 10px;
+    width: 120px;
+}
+
+.sobre h1{
+    font-size: 35px;
+    margin: 10px 0 40px 0;
+    max-width: 450px;
+    line-height: 45px;
+}
+
+.sobre .content > p{
+    max-width: 530px;
+}
+
+.sobre .content > a{
+    padding: 12px 25px;
+    color: white;
+    background-color: var(--purple);
+    box-shadow: 0px 4px 20px rgba(100, 119, 182, 0.3);
+    border-radius: 3px;
+}
+
+/* Contato */
+.contato{
+    height: calc(100vh - 71px);
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.contato > div{
+    flex: 1;
+}
+
+.contato .content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.contato .info{
+    max-width: 450px;
+}
+
+.contato .info ul li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.contato .info ul li p{
+    margin: 0 0 0 30px;
+}
+
+.contato .info ul li img{
+    width: 18px;
+}
+
+.contato form{
+    flex: 1;
+    max-width: 750px;
+}
+
+.contato form label{
+    display: block;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.contato form .flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contato form input{
+    border: none;
+    box-shadow: 0px 1.2px 0px 0px var(--gray2);
+    margin-bottom: 50px;
+    width: 100%;
+    padding: 5px 0;
+}
+
+.contato form input:focus{
+    outline: none;
+    box-shadow: 0px 2px 0px 0px var(--purple);
+    transition: 0.3s;
+}
+
+.contato form .flex input{
+    width: 350px;
+}
+
+.contato form  button{
+    padding: 12px 25px;
+    color: white;
+    background-color: var(--purple);
+    box-shadow: 0px 4px 20px rgba(100, 119, 182, 0.3);
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    float: right;
+}
