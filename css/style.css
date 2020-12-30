@@ -1,9 +1,41 @@
 :root {
     --text: #1A2028;
     --purple: #6477B6;
+    --purple2: #485FAA;
     --gray1: #F2F5FF;
     --gray2: #96989C;
  }
+
+@keyframes toTop {
+    from {
+        transform: translate3d(0, 50px, 0);
+        opacity: 0;
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+@keyframes toBottom {
+    from {
+        transform: translate3d(0, -50px, 0);
+        opacity: 0;
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
 body, input, button{
     font-family: 'Poppins', sans-serif;
@@ -37,6 +69,7 @@ p{
 
 header{
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.03);
+    animation: toBottom 0.5s forwards;
 }
 
 header .container{
@@ -52,6 +85,18 @@ header ul{
 header li a{
     margin-left: 50px;
     color: var(--text);
+    transition: 0.3s;
+}
+
+header li a.here{
+    color: var(--purple2);
+    box-shadow: 0px 1.5px 0px 0px var(--purple2);
+}
+
+header li a:hover{
+    color: var(--purple2);
+    box-shadow: 0px 1.5px 0px 0px var(--purple2);
+    transition: 0.3s;
 }
 
 /* Home */
@@ -61,6 +106,7 @@ header li a{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    animation: toTop 0.5s forwards;
 }
 
 .home .content{
@@ -75,9 +121,15 @@ header li a{
     padding: 12px 25px;
     color: white;
     background-color: var(--purple);
-    box-shadow: 0px 4px 20px rgba(100, 119, 182, 0.3);
     border-radius: 3px;
     margin-right: 20px;
+    transition: 0.3s;
+}
+
+.home .buttons a:first-child:hover{
+    background-color: var(--purple2);
+    box-shadow: 0px 4px 20px rgba(100, 119, 182, 0.3);
+    transition: 0.3s;
 }
 
 .home .buttons a:last-child{
@@ -85,12 +137,21 @@ header li a{
     color: var(--text);
     border-radius: 3px;
     border: 1px solid var(--text);
+    transition: 0.3s;
+}
+
+.home .buttons a:last-child:hover{
+    color: var(--purple);
+    border: 1px solid var(--purple);
+    box-shadow: 0px 4px 20px rgba(100, 119, 182, 0.3);
+    transition: 0.3s;
 }
 
 footer{
     display: flex;
     justify-content: space-between;
     padding: 30px 0;
+    animation: opacity 1s forwards;
 }
 
 /* Serviços */
@@ -106,6 +167,10 @@ footer{
     margin: 10px 0 40px 0;
     max-width: 550px;
     line-height: 45px;
+}
+
+.servicos div{
+    animation: toTop 0.5s forwards;
 }
 
 .servicos div > p{
@@ -128,7 +193,6 @@ footer{
     justify-content: space-between;
     align-items: flex-start;
     border-radius: 3px;
-    box-shadow: 2px 2px 7px rgba(100, 119, 182, 0.3);
 }
 
 .servicos ul li p{
@@ -140,8 +204,14 @@ footer{
     padding: 12px 25px;
     color: white;
     background-color: var(--purple);
-    box-shadow: 0px 4px 20px rgba(100, 119, 182, 0.3);
     border-radius: 3px;
+    transition: 0.3s;
+}
+
+.servicos div > a:hover{
+    background-color: var(--purple2);
+    box-shadow: 0px 4px 20px rgba(100, 119, 182, 0.3);
+    transition: 0.3s;
 }
 
 /* Sobre */
@@ -156,6 +226,7 @@ footer{
     display: flex;
     flex-wrap: wrap;
     max-width: 40%;
+    animation: toTop 0.5s forwards;
 }
 
 .sobre .team img{
@@ -170,6 +241,10 @@ footer{
     line-height: 45px;
 }
 
+.sobre .content{
+    animation: toTop 0.5s forwards;
+}
+
 .sobre .content > p{
     max-width: 530px;
 }
@@ -178,8 +253,14 @@ footer{
     padding: 12px 25px;
     color: white;
     background-color: var(--purple);
-    box-shadow: 0px 4px 20px rgba(100, 119, 182, 0.3);
     border-radius: 3px;
+    transition: 0.3s;
+}
+
+.sobre .content > a:hover{
+    background-color: var(--purple2);
+    box-shadow: 0px 4px 20px rgba(100, 119, 182, 0.3);
+    transition: 0.3s;
 }
 
 /* Contato */
@@ -192,6 +273,7 @@ footer{
 
 .contato > div{
     flex: 1;
+    animation: toTop 0.5s forwards;
 }
 
 .contato .content{
@@ -242,6 +324,11 @@ footer{
     padding: 5px 0;
 }
 
+.contato form input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+ }
+
 .contato form input:focus{
     outline: none;
     box-shadow: 0px 2px 0px 0px var(--purple);
@@ -252,14 +339,20 @@ footer{
     width: 350px;
 }
 
-.contato form  button{
+.contato form button{
     padding: 12px 25px;
     color: white;
     background-color: var(--purple);
-    box-shadow: 0px 4px 20px rgba(100, 119, 182, 0.3);
     border-radius: 3px;
     border: none;
     cursor: pointer;
     outline: none;
     float: right;
+    transition: 0.3s;
+}
+
+.contato form button:hover{
+    background-color: var(--purple2);
+    box-shadow: 0px 4px 20px rgba(100, 119, 182, 0.3);
+    transition: 0.3s;
 }
