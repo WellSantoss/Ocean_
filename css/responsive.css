@@ -1,0 +1,207 @@
+@media (max-width: 1400px){
+    .contato form .flex input{
+        width: 300px;
+    }
+}
+
+@media (max-width: 1200px){
+    .home .home-container{
+        padding: 0 50px;
+    }
+
+    .home .content{
+        max-width: 440px;
+    }
+
+    .contato{
+        height: auto;
+    }
+
+    .contato > div{
+        margin-top: 40px;
+    }
+
+    .contato .content{
+        display: block;
+    }
+
+    .contato form{
+        margin: 60px 0;
+    }
+
+    .contato form .flex input{
+        width: 350px;
+    }
+
+    .contato form button{
+        float: none;
+    }
+}
+
+@media (max-width: 992px){
+    .home .content{
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .home .planilha-img img{
+        display: none;
+    }
+
+    footer img{
+        max-height: 35px;
+    }
+
+    .sobre .team img{
+        width: 100px;
+    }
+
+    .servicos ul li{
+        width: 160px;
+        height: 160px;
+        margin-right: 20px;
+        padding: 15px;
+    }
+
+    .contato form .flex input{
+        width: 330px;
+    }
+}
+
+@media (max-width: 768px){
+    .home .home-container{
+        padding: 0 40px;
+    }
+
+    .home .content{
+        margin: 0;
+        text-align: center;
+    }
+
+    footer{
+        display: none;
+    }
+
+    .sobre .team{
+        display: none;
+    }
+
+    .sobre .content{
+        text-align: center;
+    }
+
+    .sobre h1{
+        margin: 10px auto 40px auto;
+        max-width: 450px;
+    }
+
+    .servicos{
+        height: auto;
+    }
+
+    .servicos div{
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .servicos ul{
+        justify-content: space-between;
+        max-width: 340px;
+        flex-wrap: wrap;
+        margin: 0 auto 50px auto;
+    }
+
+    .servicos ul li{
+        margin: 0 0 20px 0;
+    }
+
+    .contato .info, .contato h2{
+        text-align: center;
+    }
+
+    .contato .info ul li {
+        justify-content: center;
+    }
+
+    .contato form{
+        position: relative;
+        width: 100%;
+    }
+
+    .contato form .flex{
+        display: block;
+    }
+
+    .contato form .flex input{
+        width: 100%;
+    }
+
+    .contato form .flex div:first-child{
+        margin-right: 0;
+    }
+
+    .contato form button{
+        bottom: -28px;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 576px){
+    h1{
+        font-size: 35px;
+        line-height: 54.22px;
+        margin-bottom: 20px;
+    }
+
+    header .container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header ul{
+        margin-top: 30px;
+    }
+
+    header li a{
+        margin-left: 0px;
+    }
+
+    header li + li{
+        margin-left: 50px;
+    }
+
+    .home .home-container{
+        height: auto;
+        padding: 0;
+    }
+
+    .home .buttons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home .buttons a:first-child{
+        margin: 0 0 20px 0;
+    }
+
+    .home .buttons a:first-child{
+        padding: 14px 0;
+        width: 160px;
+    }
+
+    .home .buttons a:last-child{
+        padding: 12px 0;
+        width: 160px;
+    }
+
+    .servicos ul{
+        justify-content: center;
+    }
+
+    .contato .info ul li:last-child{
+        align-items: flex-start;
+    }
+}

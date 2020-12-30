@@ -111,6 +111,7 @@ header li a:hover{
 
 .home .content{
     max-width: 490px;
+    margin-right: 40px;
 }
 
 .home .planilha-img img{
@@ -152,6 +153,56 @@ footer{
     justify-content: space-between;
     padding: 30px 0;
     animation: opacity 1s forwards;
+}
+
+/* Sobre */
+.sobre{
+    height: calc(100vh - 71px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre .team{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 40%;
+    animation: toTop 0.5s forwards;
+    margin-right: 30px;
+}
+
+.sobre .team img{
+    margin: 10px;
+    width: 120px;
+}
+
+.sobre h1{
+    font-size: 35px;
+    margin: 10px 0 40px 0;
+    max-width: 450px;
+    line-height: 45px;
+}
+
+.sobre .content{
+    animation: toTop 0.5s forwards;
+}
+
+.sobre .content > p{
+    max-width: 530px;
+}
+
+.sobre .content > a{
+    padding: 12px 25px;
+    color: white;
+    background-color: var(--purple);
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+.sobre .content > a:hover{
+    background-color: var(--purple2);
+    box-shadow: 0px 4px 20px rgba(100, 119, 182, 0.3);
+    transition: 0.3s;
 }
 
 /* Serviços */
@@ -214,61 +265,11 @@ footer{
     transition: 0.3s;
 }
 
-/* Sobre */
-.sobre{
-    height: calc(100vh - 71px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.sobre .team{
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 40%;
-    animation: toTop 0.5s forwards;
-}
-
-.sobre .team img{
-    margin: 10px;
-    width: 120px;
-}
-
-.sobre h1{
-    font-size: 35px;
-    margin: 10px 0 40px 0;
-    max-width: 450px;
-    line-height: 45px;
-}
-
-.sobre .content{
-    animation: toTop 0.5s forwards;
-}
-
-.sobre .content > p{
-    max-width: 530px;
-}
-
-.sobre .content > a{
-    padding: 12px 25px;
-    color: white;
-    background-color: var(--purple);
-    border-radius: 3px;
-    transition: 0.3s;
-}
-
-.sobre .content > a:hover{
-    background-color: var(--purple2);
-    box-shadow: 0px 4px 20px rgba(100, 119, 182, 0.3);
-    transition: 0.3s;
-}
-
 /* Contato */
 .contato{
     height: calc(100vh - 71px);
     display: flex;
     align-items: center;
-    /* justify-content: center; */
 }
 
 .contato > div{
@@ -279,17 +280,17 @@ footer{
 .contato .content{
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .contato .info{
-    max-width: 450px;
+    max-width: 500px;
 }
 
 .contato .info ul li{
     display: flex;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .contato .info ul li p{
@@ -301,8 +302,8 @@ footer{
 }
 
 .contato form{
-    flex: 1;
     max-width: 750px;
+    margin-left: 50px;
 }
 
 .contato form label{
@@ -316,6 +317,10 @@ footer{
     justify-content: space-between;
 }
 
+.contato form .flex div:first-child{
+    margin-right: 30px;
+}
+
 .contato form input{
     border: none;
     box-shadow: 0px 1.2px 0px 0px var(--gray2);
@@ -323,11 +328,6 @@ footer{
     width: 100%;
     padding: 5px 0;
 }
-
-/* .contato form input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button{
-    -webkit-appearance: none;
-    margin: 0;
- } */
 
 .contato form input:focus{
     outline: none;
