@@ -324,10 +324,10 @@ footer{
     padding: 5px 0;
 }
 
-.contato form input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button{
+/* .contato form input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button{
     -webkit-appearance: none;
     margin: 0;
- }
+ } */
 
 .contato form input:focus{
     outline: none;
