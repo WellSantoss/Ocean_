@@ -6,7 +6,7 @@
 Projeto desenvolvido a partir de layout criado para o desafio 2 do grupo Road to Dev Jr, organizado por <a href="https://github.com/CaioAugustoo">Caio Augusto</a> e <a href="https://github.com/gomes-dev">Luciano Gomes</a>.
 </h4> 
 
-![Resultado final do projeto](assets/image/resultado.png)
+![Resultado final do projeto](assets/Ocean_.png)
 
 ---
 
