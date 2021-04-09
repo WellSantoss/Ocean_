@@ -1,19 +1,8 @@
-<h1 align="center">Ocean_
+<h1 align="center">Ocean_</h1>
 
-<p align="center">
-Projeto desenvolvido a partir de layout criado para o desafio 2 do grupo Road to Dev Jr.
+<h4 align="center">Projeto desenvolvido a partir de layout criado para o desafio 2 do grupo Road to Dev Jr.</h4>
 
 ![Resultado final do projeto](assets/Ocean_.png)
-
----
-
-## 📚 Organização
-O site é composto por 4 Páginas:
-
-- **Home:** Página inicial com breve apresentação;
-- **Sobre:** Descrição sobre a empresa;
-- **Serviços:** Descrição dos serviços prestados;
-- **Contato:** Informações e formulário para contato;
 
 ---
 
