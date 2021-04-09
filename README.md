@@ -1,17 +1,14 @@
-<h1 align="center">
-📰<br>Ocean_
-</h1>
+<h1 align="center">Ocean_
 
-<h4 align="center">
-Projeto desenvolvido a partir de layout criado para o desafio 2 do grupo Road to Dev Jr, organizado por <a href="https://github.com/CaioAugustoo">Caio Augusto</a> e <a href="https://github.com/gomes-dev">Luciano Gomes</a>.
-</h4> 
+<p align="center">
+Projeto desenvolvido a partir de layout criado para o desafio 2 do grupo Road to Dev Jr.
 
 ![Resultado final do projeto](assets/Ocean_.png)
 
 ---
 
-## 📚 Seções
-O site é composto por 4 seções:
+## 📚 Organização
+O site é composto por 4 Páginas:
 
 - **Home:** Página inicial com breve apresentação;
 - **Sobre:** Descrição sobre a empresa;
