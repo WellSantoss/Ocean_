@@ -1,8 +1,13 @@
-<h1 align="center">Ocean_</h1>
+# Ocean_
 
-<h4 align="center">Projeto desenvolvido a partir de layout criado para o desafio 2 do grupo Road to Dev Jr.</h4>
+![Resultado final](assets/Ocean_.png)
 
-![Resultado final do projeto](assets/Ocean_.png)
+Resultado final: https://wellsantoss.github.io/Ocean_/
+
+---
+
+## Sobre
+Projeto desenvolvido a partir de layout criado para o desafio 2 do grupo Road to Dev Jr.
 
 ---
 
